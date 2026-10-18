@@ -65,7 +65,7 @@ export function 그리기() {
   return [
     머리('7', '두 가지 회귀 분석'),
     카드('통계적 회귀 vs 기계학습 기반 회귀',
-      h('div', { class: 'two-col' },
+      h('div', { class: 'two-col even' },
         h('div', {}, h('h3', {}, '통계적 회귀 분석'), h('div', { class: 'plot-box' }, 왼.svg),
           h('p', { class: 'small' }, '점 9개를 모두 써서 직선을 구하고, 그 직선이 데이터를 얼마나 설명하는지(R²) 본다.')),
         h('div', {}, h('h3', {}, '기계학습 기반 회귀 분석'), h('div', { class: 'plot-box' }, 오른.svg),
