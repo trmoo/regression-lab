@@ -1,4 +1,4 @@
-/*! 회귀 분석 실험실 — © 2026 티쳐무 · 모든 권리 보유
+/*! 회귀 분석의 핵심개념 탐구 — © 2026 티쳐무 · 모든 권리 보유
  *  학교 수업 목적으로만 이용해 주세요. 자세한 내용은 LICENSE 파일을 보세요.
  *  앱의 뼈대: 머리띠 · 화면 차례 · 주소 해시(#line) · 이전/다음 단추.
  */
@@ -31,7 +31,7 @@ const 학생표시 = h('span', { class: 'who' });
 const 저장표시 = h('span', { class: 'save-state' });
 앱.append(
   h('header', { class: 'app-header no-print' },
-    h('div', { class: 'brand' }, '📈 회귀 분석 실험실', h('span', { class: 'sub' }, '데이터 과학 · 회귀 분석 모델')),
+    h('div', { class: 'brand' }, '📈 회귀 분석의 핵심개념 탐구', h('span', { class: 'sub' }, '데이터 과학 · 회귀 분석 모델')),
     h('div', { class: 'head-right' }, 진행막대, 학생표시, 저장표시,
       h('button', { type: 'button', class: 'btn head-save', title: '지금까지 한 활동을 이 앱 파일째 바탕 화면에 저장합니다', onclick: () => 저장하기(머리갱신) }, '💾 저장하기'))),
   탭줄, 본문, 아래줄, 푸터());

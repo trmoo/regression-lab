@@ -1,4 +1,4 @@
-/*! 회귀 분석 실험실 (regression-lab)
+/*! 회귀 분석의 핵심개념 탐구 (regression-lab)
  *  © 2026 티쳐무 · 모든 권리 보유
  *  학교 수업 목적으로만 이용해 주세요. 자세한 내용은 LICENSE 파일을 보세요.
  */
@@ -7,7 +7,7 @@ import { viteSingleFile } from 'vite-plugin-singlefile';
 
 // 빌드 결과 맨 앞에 남길 저작권 배너.
 // `/*!` 로 시작해야 압축 과정에서 지워지지 않는다.
-const 배너 = `/*! 회귀 분석 실험실 — © 2026 티쳐무 · 모든 권리 보유
+const 배너 = `/*! 회귀 분석의 핵심개념 탐구 — © 2026 티쳐무 · 모든 권리 보유
  * 학교 수업 목적으로만 이용해 주세요. 무단 배포·상업적 이용을 금합니다. */`;
 
 export default defineConfig({

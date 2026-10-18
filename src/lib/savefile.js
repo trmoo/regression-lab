@@ -1,4 +1,4 @@
-/*! 회귀 분석 실험실 — © 2026 티쳐무 · 모든 권리 보유
+/*! 회귀 분석의 핵심개념 탐구 — © 2026 티쳐무 · 모든 권리 보유
  *  💾 저장하기 — 이 HTML 파일(앱) 그대로에 학생 활동만 심어 파일째 저장한다.
  *  데이터과학 수행평가 시험지(offline-exam)와 같은 방식이다.
  *
@@ -104,7 +104,7 @@ export async function 저장하기(다시그리기 = () => {}) {
     try {
       대상 = await window.showSaveFilePicker({
         suggestedName: 이름, startIn: 'desktop',
-        types: [{ description: '회귀 분석 실험실 (HTML)', accept: { 'text/html': ['.html', '.htm'] } }],
+        types: [{ description: '회귀 분석의 핵심개념 탐구 (HTML)', accept: { 'text/html': ['.html', '.htm'] } }],
       });
     } catch (e) {
       if (e?.name === 'AbortError') return; // 학생이 저장 창을 닫음

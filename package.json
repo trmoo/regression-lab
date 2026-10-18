@@ -1,7 +1,7 @@
 {
   "name": "regression-lab",
   "version": "1.0.0",
-  "description": "회귀 분석 실험실 — 「데이터 과학」 회귀 분석 학습지를 브라우저에서 직접 조작해 보는 앱",
+  "description": "회귀 분석의 핵심개념 탐구 — 「데이터 과학」 회귀 분석 학습지를 브라우저에서 직접 조작해 보는 앱",
   "license": "UNLICENSED",
   "private": true,
   "type": "module",
