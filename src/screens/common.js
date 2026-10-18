@@ -15,10 +15,10 @@ export function 개념(...내용) {
   return h('div', { class: 'concept' }, ...내용);
 }
 
-/** 쪽 머리 — 「3. 선형 회귀 분석 (p.111)」 */
-export function 머리(번호, 제목, 쪽) {
+/** 화면 머리 — 「3 선형 회귀 분석」 */
+export function 머리(번호, 제목) {
   return h('header', { class: 'screen-head' },
-    h('span', { class: 'num' }, 번호), h('h1', {}, 제목), 쪽 ? h('span', { class: 'page' }, `교과서 ${쪽}`) : null);
+    h('span', { class: 'num' }, 번호), h('h1', {}, 제목));
 }
 
 /** [표1] 산점도. 점마다 (x, y) 이름표를 단다. */

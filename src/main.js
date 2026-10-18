@@ -31,7 +31,7 @@ const 학생표시 = h('span', { class: 'who' });
 const 저장표시 = h('span', { class: 'save-state' });
 앱.append(
   h('header', { class: 'app-header no-print' },
-    h('div', { class: 'brand' }, '📈 회귀 분석 실험실', h('span', { class: 'sub' }, '데이터 과학 · 회귀 분석 모델 (p.110~113)')),
+    h('div', { class: 'brand' }, '📈 회귀 분석 실험실', h('span', { class: 'sub' }, '데이터 과학 · 회귀 분석 모델')),
     h('div', { class: 'head-right' }, 진행막대, 학생표시, 저장표시,
       h('button', { type: 'button', class: 'btn head-save', title: '지금까지 한 활동을 이 앱 파일째 바탕 화면에 저장합니다', onclick: () => 저장하기(머리갱신) }, '💾 저장하기'))),
   탭줄, 본문, 아래줄, 푸터());
