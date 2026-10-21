@@ -14,6 +14,8 @@ export function 표5정답() {
     답[`p${i}`] = p; 답[`e${i}`] = e; 답[`a${i}`] = Math.abs(e); 답[`s${i}`] = e * e;
   });
   const n = 표5.x.length;
+  답.sumA = 표5.x.reduce((t, _, i) => t + 답[`a${i}`], 0);
+  답.sumS = 표5.x.reduce((t, _, i) => t + 답[`s${i}`], 0);
   답.avgA = 표5.x.reduce((t, _, i) => t + 답[`a${i}`], 0) / n;
   답.avgS = 표5.x.reduce((t, _, i) => t + 답[`s${i}`], 0) / n;
   답.mae = 답.avgA;

@@ -185,7 +185,7 @@ textarea { width: 100%; border: 1.5px solid var(--line); border-radius: 10px; pa
 .frac > span:first-child { border-bottom: 1.5px solid var(--ink); padding: 0 6px; }
 .mae-mse { margin-top: 10px; font-size: 1.1rem; }
 .mae-mse > div { margin: 6px 0; }
-.avg-row th { background: #f7f8fb; }
+.avg-row th, .sum-row th { background: #f7f8fb; }
 
 /* 결정 계수 막대 */
 .stack { display: flex; height: 40px; border-radius: 10px; overflow: hidden; margin: 12px 0 4px; font-weight: 700; }

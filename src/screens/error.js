@@ -17,6 +17,7 @@ export function 그리기() {
         표5.x.map((x, i) => h('tr', { class: 표5.y[i] - x === -3 ? 'focus-row' : '' },
           h('td', {}, x), h('td', {}, 표5.y[i]),
           h('td', {}, 숫자칸(`p${i}`)), h('td', {}, 숫자칸(`e${i}`)), h('td', {}, 숫자칸(`a${i}`)), h('td', {}, 숫자칸(`s${i}`)))),
+        h('tr', { class: 'sum-row' }, h('th', {}, '합계'), h('td', {}, '-'), h('td', {}, '-'), h('td', {}, '-'), h('td', {}, 숫자칸('sumA')), h('td', {}, 숫자칸('sumS'))),
         h('tr', { class: 'avg-row' }, h('th', {}, '평균'), h('td', {}, '-'), h('td', {}, '-'), h('td', {}, '-'), h('td', {}, 숫자칸('avgA')), h('td', {}, 숫자칸('avgS'))))),
     h('div', { class: 'mae-mse' },
       h('div', {}, '→ 평균절대오차(MAE) = ', 숫자칸('mae')),
@@ -81,6 +82,8 @@ function 칸힌트(id) {
   if (id.startsWith('e')) return '오차 = 실젯값 − 예측값 (음수가 나올 수도 있어요)';
   if (id.startsWith('a')) return '오차의 부호를 떼어 내세요.';
   if (id.startsWith('s')) return '오차를 제곱하세요. (−3)² = 9';
-  if (id === 'avgA' || id === 'mae') return '|오차| 네 개를 더해 4 로 나눠요.';
-  return '오차² 네 개를 더해 4 로 나눠요.';
+  if (id === 'sumA') return '|오차| 네 개를 모두 더하세요.';
+  if (id === 'sumS') return '오차² 네 개를 모두 더하세요.';
+  if (id === 'avgA' || id === 'mae') return '|오차| 의 합계를 4 로 나눠요.';
+  return '오차² 의 합계를 4 로 나눠요.';
 }
